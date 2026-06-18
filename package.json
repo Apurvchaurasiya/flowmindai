@@ -1,0 +1,17 @@
+{
+  "name": "flowmind-landing",
+  "version": "1.0.0",
+  "description": "Premium modern landing page for FlowMind AI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000"
+  },
+  "keywords": [
+    "landing-page",
+    "saas",
+    "flowmind",
+    "ai"
+  ],
+  "author": "Antigravity",
+  "license": "ISC"
+}

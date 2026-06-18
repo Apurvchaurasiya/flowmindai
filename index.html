@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMind AI — Your AI Workspace That Thinks Before You Do</title>
+  <meta name="description" content="Automate work, organize ideas, summarize meetings, and collaborate with AI in one beautiful, premium workspace. FlowMind AI helps teams save hours weekly.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient background glow blobs -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"></div>
+        FlowMind AI
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#showcase" class="nav-link">Showcase</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        
+        <!-- Mobile Actions (Appended here on small screens) -->
+        <li class="header-actions-mobile">
+          <a href="#" class="btn btn-secondary">Sign In</a>
+          <a href="#" class="btn btn-primary">Start Free</a>
+        </li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-secondary">Sign In</a>
+        <a href="#" class="btn btn-primary">Start Free</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          FlowMind AI v1.0 • Now in Public Beta
+        </div>
+        <h1 class="hero-headline">Your AI Workspace That Thinks Before You Do.</h1>
+        <p class="hero-subheadline">Automate work, organize ideas, summarize meetings, and collaborate with AI in one beautiful, integrated workspace designed for modern teams.</p>
+        
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary">
+            Start Free
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#" class="btn btn-secondary">
+            <i data-lucide="play"></i>
+            Watch Demo
+          </a>
+        </div>
+
+        <div class="hero-stats-mini">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">100K+</span>
+            <span class="hero-stat-lbl">Active Users</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">4.9/5</span>
+            <span class="hero-stat-lbl">User Rating</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">25M+</span>
+            <span class="hero-stat-lbl">Tasks Automated</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-mockup-wrapper reveal">
+        <div class="hero-mockup-glow"></div>
+        <div class="hero-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+            </div>
+            <div class="mockup-tab">flowmind.ai/workspace</div>
+            <div style="width: 42px;"></div>
+          </div>
+          <div class="mockup-content">
+            <!-- Mockup Sidebar -->
+            <div class="mockup-sidebar">
+              <div class="sidebar-title">Workspace</div>
+              <ul class="sidebar-menu">
+                <li class="sidebar-item active">
+                  <span class="sidebar-item-dot"></span>
+                  <i data-lucide="layout-dashboard"></i>
+                  Dashboard
+                </li>
+                <li class="sidebar-item">
+                  <span class="sidebar-item-dot"></span>
+                  <i data-lucide="message-square"></i>
+                  AI Chat
+                </li>
+                <li class="sidebar-item">
+                  <span class="sidebar-item-dot"></span>
+                  <i data-lucide="git-merge"></i>
+                  Workflows
+                </li>
+                <li class="sidebar-item">
+                  <span class="sidebar-item-dot"></span>
+                  <i data-lucide="calendar"></i>
+                  Calendar
+                </li>
+                <li class="sidebar-item">
+                  <span class="sidebar-item-dot"></span>
+                  <i data-lucide="settings"></i>
+                  Settings
+                </li>
+              </ul>
+            </div>
+            <!-- Mockup Main Panel -->
+            <div class="mockup-main">
+              <div class="widget-chat">
+                <div class="chat-bubble user">
+                  FlowMind, summarize the key action items from the Product roadmap sync.
+                </div>
+                <div class="chat-bubble ai" id="simulated-chat-bubble">
+                  Sure! I found 3 key items:<br>
+                  1. Alex to ship the integrations pipeline update.<br>
+                  2. Sarah to review pricing tier alignment docs.<br>
+                  3. Setup Zapier trigger for webhook analytics notifications.
+                </div>
+              </div>
+              
+              <div class="mockup-grid-stats">
+                <div class="mini-card">
+                  <div class="mini-card-title">Daily Operations</div>
+                  <div class="mini-card-value">
+                    99.9%
+                    <span class="value-trend trend-up">Uptime</span>
+                  </div>
+                  <div class="mini-card-chart">
+                    <!-- Inline SVG Mini Line Chart -->
+                    <svg viewBox="0 0 100 30" width="100%" height="100%">
+                      <path d="M0 25 C 20 20, 40 5, 60 18 C 80 12, 90 2, 100 8" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M0 25 C 20 20, 40 5, 60 18 C 80 12, 90 2, 100 8 L 100 30 L 0 30 Z" fill="url(#mini-glow-gradient)" opacity="0.15"/>
+                      <defs>
+                        <linearGradient id="mini-glow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="#22D3EE"/>
+                          <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+                <div class="mini-card">
+                  <div class="mini-card-title">Active Projects</div>
+                  <div class="mini-card-value">
+                    42 / 50
+                    <span class="value-trend trend-up" style="background: rgba(124, 58, 237, 0.1); color: #C084FC;">84%</span>
+                  </div>
+                  <div class="mini-card-chart">
+                    <!-- Inline SVG Sparkline -->
+                    <svg viewBox="0 0 100 30" width="100%" height="100%">
+                      <path d="M0 20 L 20 18 L 40 25 L 60 10 L 80 15 L 100 2" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M0 20 L 20 18 L 40 25 L 60 10 L 80 15 L 100 2 L 100 30 L 0 30 Z" fill="url(#mini-purple-gradient)" opacity="0.15"/>
+                      <defs>
+                        <linearGradient id="mini-purple-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="#7C3AED"/>
+                          <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By Logos -->
+  <section class="trusted-by">
+    <div class="container">
+      <div class="trusted-title">TRUSTED BY THE WORLD'S LEADING PRODUCTS</div>
+      <div class="logo-scroller">
+        <div class="trusted-logo">
+          <i data-lucide="shield"></i>
+          <span>Apex</span>
+        </div>
+        <div class="trusted-logo">
+          <i data-lucide="globe"></i>
+          <span>Aether</span>
+        </div>
+        <div class="trusted-logo">
+          <i data-lucide="layers"></i>
+          <span>Vertex</span>
+        </div>
+        <div class="trusted-logo">
+          <i data-lucide="orbit"></i>
+          <span>Orbit</span>
+        </div>
+        <div class="trusted-logo">
+          <i data-lucide="activity"></i>
+          <span>Echo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Overview -->
+  <section class="stats-section section-padding">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal spotlight-card">
+          <div class="stat-num" data-val="100000">100K+</div>
+          <div class="stat-lbl">Active Users</div>
+        </div>
+        <div class="stat-card reveal spotlight-card" style="transition-delay: 0.1s;">
+          <div class="stat-num">4.9/5</div>
+          <div class="stat-lbl">Rating</div>
+        </div>
+        <div class="stat-card reveal spotlight-card" style="transition-delay: 0.2s;">
+          <div class="stat-num">99.9%</div>
+          <div class="stat-lbl">Uptime</div>
+        </div>
+        <div class="stat-card reveal spotlight-card" style="transition-delay: 0.3s;">
+          <div class="stat-num" data-val="25000000">25M+</div>
+          <div class="stat-lbl">Automations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-padding" id="features">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Features Set
+        </div>
+        <h2 class="section-title">Engineered to Accelerate Workflows</h2>
+        <p class="section-description">A full suite of cognitive intelligence workspace components tailored for hyper-growth startups and creative designers.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div class="feature-info">
+            <h3 class="feature-card-title">AI Assistant</h3>
+            <p class="feature-card-desc">An intelligent copilot that helps write clean documentation, emails, and drafts with your brand tone.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="git-merge"></i>
+          </div>
+          <div class="feature-info">
+            <h3 class="feature-card-title">Smart Automation</h3>
+            <p class="feature-card-desc">Build connected trigger paths that connect notifications, updates, and sync actions without coding a line.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-info">
+            <div class="feature-icon-wrapper">
+              <i data-lucide="users"></i>
+            </div>
+            <h3 class="feature-card-title">Team Collaboration</h3>
+            <p class="feature-card-desc">Real-time shared workspaces with multi-user cursors, version tracking, and quick contextual feedback.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <div class="feature-info">
+            <h3 class="feature-card-title">Real-Time Analytics</h3>
+            <p class="feature-card-desc">Visualize operational throughput, active tickets, and team velocity in beautifully customizable dashboards.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div class="feature-info">
+            <h3 class="feature-card-title">Secure Cloud Storage</h3>
+            <p class="feature-card-desc">All document databases and company files are isolated with end-to-end AES-256 cloud encryption.</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="feature-card reveal spotlight-card">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="webhook"></i>
+          </div>
+          <div class="feature-info">
+            <h3 class="feature-card-title">API Integrations</h3>
+            <p class="feature-card-desc">Connect custom webhooks, databases, and core communication tools directly through our robust web REST APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works section-padding" id="how-it-works">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Step-by-step Setup
+        </div>
+        <h2 class="section-title">Start Automating in 3 Simple Steps</h2>
+        <p class="section-description">Deploy FlowMind AI across your workflow streams without changing your stack.</p>
+      </div>
+
+      <div class="stepper-container">
+        <!-- SVG Connecting Path -->
+        <div class="stepper-connector">
+          <svg viewBox="0 0 1000 2" preserveAspectRatio="none">
+            <path id="path-connector" d="M 0 1 L 1000 1" />
+            <path class="stepper-connector-active" d="M 0 1 L 1000 1" />
+            <defs>
+              <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#7C3AED"/>
+                <stop offset="50%" stop-color="#3B82F6"/>
+                <stop offset="100%" stop-color="#22D3EE"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Connect your apps</h3>
+          <p class="step-desc">Link Notion, GitHub, Slack, and Google Drive in seconds with safe OAuth logins.</p>
+        </div>
+        <div class="step-item reveal" style="transition-delay: 0.15s;">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Let AI automate workflows</h3>
+          <p class="step-desc">Select ready-to-use recipes or tell our assistant what workflow connections you need.</p>
+        </div>
+        <div class="step-item reveal" style="transition-delay: 0.3s;">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Save hours every week</h3>
+          <p class="step-desc">Sit back as FlowMind organizes documents, updates pipelines, and alerts your team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Showcase Section -->
+  <section class="section-padding" id="showcase">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Showcase Centerpiece
+        </div>
+        <h2 class="section-title">One Dashboard, Infinite Possibilities</h2>
+        <p class="section-description">Take command of operations, workflows, and task databases from a single premium interactive environment.</p>
+      </div>
+
+      <div class="showcase-wrapper reveal">
+        <div class="showcase-card glass">
+          <div class="showcase-layout">
+            
+            <!-- Showcase Sidebar Menu -->
+            <div class="showcase-sidebar">
+              <div class="showcase-nav">
+                <button class="showcase-nav-btn active" data-target="revenue-panel">
+                  <i data-lucide="line-chart"></i>
+                  Revenue Analytics
+                </button>
+                <button class="showcase-nav-btn" data-target="roadmap-panel">
+                  <i data-lucide="milestone"></i>
+                  Project Roadmap
+                </button>
+                <button class="showcase-nav-btn" data-target="copilot-panel">
+                  <i data-lucide="bot"></i>
+                  AI Copilot Live
+                </button>
+              </div>
+
+              <div class="showcase-sidebar-footer">
+                <div class="user-profile">
+                  <div class="user-profile-inner">JD</div>
+                </div>
+                <div class="user-info-text">
+                  <span class="user-name">Jordan Dev</span>
+                  <span class="user-role">Workspace Admin</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Showcase Main Content Panels -->
+            <div class="showcase-main">
+              
+              <!-- Panel 1: Revenue -->
+              <div class="showcase-panel active" id="revenue-panel">
+                <div class="panel-header">
+                  <div>
+                    <h3 class="panel-title">Revenue & Operations</h3>
+                    <p class="panel-desc">Real-time revenue metrics tracked via direct API integrations.</p>
+                  </div>
+                  <span class="value-trend trend-up">+18.4% MoM</span>
+                </div>
+                
+                <div class="chart-container-large">
+                  <div class="chart-stats-row">
+                    <div class="chart-stat">
+                      <span class="chart-stat-val">$124,582</span>
+                      <span class="chart-stat-lbl">Monthly Recurring Revenue</span>
+                    </div>
+                    <div class="chart-stat">
+                      <span class="chart-stat-val">$3,245</span>
+                      <span class="chart-stat-lbl">Average Sale Value</span>
+                    </div>
+                  </div>
+                  
+                  <div class="svg-chart-wrapper">
+                    <svg viewBox="0 0 600 200" width="100%" height="100%" preserveAspectRatio="none">
+                      <!-- Grid lines -->
+                      <line x1="0" y1="50" x2="600" y2="50" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                      <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                      <line x1="0" y1="150" x2="600" y2="150" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                      <!-- Smooth Chart Line -->
+                      <path d="M 0 160 Q 100 130, 150 90 T 300 100 T 450 40 T 600 50" fill="none" stroke="url(#chart-gradient)" stroke-width="4" stroke-linecap="round"/>
+                      <!-- Gradient Fill Area -->
+                      <path d="M 0 160 Q 100 130, 150 90 T 300 100 T 450 40 T 600 50 L 600 200 L 0 200 Z" fill="url(#chart-fill-gradient)" opacity="0.15"/>
+                      
+                      <defs>
+                        <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stop-color="#7C3AED"/>
+                          <stop offset="50%" stop-color="#3B82F6"/>
+                          <stop offset="100%" stop-color="#22D3EE"/>
+                        </linearGradient>
+                        <linearGradient id="chart-fill-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="#7C3AED"/>
+                          <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 2: Roadmap -->
+              <div class="showcase-panel" id="roadmap-panel">
+                <div class="panel-header">
+                  <div>
+                    <h3 class="panel-title">Project Roadmap Sync</h3>
+                    <p class="panel-desc">Visual timeline generated and updated automatically by AI project triggers.</p>
+                  </div>
+                </div>
+                
+                <div class="timeline-list">
+                  <div class="timeline-item">
+                    <span class="timeline-label">Integrations Beta</span>
+                    <div class="timeline-bar-wrapper">
+                      <div class="timeline-bar" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-label">Workflow Node Engine</span>
+                    <div class="timeline-bar-wrapper">
+                      <div class="timeline-bar" style="width: 60%;"></div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-label">GDPR Encryption Crypt</span>
+                    <div class="timeline-bar-wrapper">
+                      <div class="timeline-bar" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="timeline-label">Analytics Custom Report</span>
+                    <div class="timeline-bar-wrapper">
+                      <div class="timeline-bar" style="width: 40%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 3: Copilot -->
+              <div class="showcase-panel" id="copilot-panel">
+                <div class="panel-header">
+                  <div>
+                    <h3 class="panel-title">AI Copilot Interactive</h3>
+                    <p class="panel-desc">Type queries, schedule tasks, or ask the cognitive model questions.</p>
+                  </div>
+                </div>
+                
+                <div class="copilot-container">
+                  <div class="copilot-input-panel">
+                    <span class="sidebar-title" style="margin-bottom: 8px;">Try suggestions</span>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                      <button class="copilot-suggestion-pill">/create-jira-issue "Fix webhook error"</button>
+                      <button class="copilot-suggestion-pill">/summarize-docs "Integrations schema"</button>
+                      <button class="copilot-suggestion-pill">/deploy-webhook "Trigger sync event"</button>
+                    </div>
+                    
+                    <div class="copilot-text-box">
+                      <input type="text" id="copilot-custom-input" placeholder="Type a prompt to FlowMind AI..." value="/create-jira-issue &quot;Fix webhook error&quot;">
+                      <button id="btn-run-copilot" aria-label="Run AI prompt">
+                        <i data-lucide="send"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="copilot-response-panel">
+                    <div class="copilot-response-header">
+                      <i data-lucide="terminal"></i>
+                      <span>COGNITIVE FLOW CONSOLE</span>
+                    </div>
+                    <div id="copilot-screen-content">
+                      $ flowmind-ai --init<br>
+                      Initializing workspace engine... OK<br>
+                      Listening for prompts...<br>
+                      <br>
+                      <span style="color: #A5B4FC;">Click a suggestion pill or hit Enter to test actions.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section-padding">
+    <div class="container benefits-section">
+      
+      <!-- Benefit Row 1 -->
+      <div class="benefit-row">
+        <div class="benefit-text reveal">
+          <h2 class="benefit-title">Save 10+ Hours Every Single Week</h2>
+          <p class="benefit-desc">FlowMind works continuously behind the scenes to sync your data feeds. Stop spending hours drafting standups, building Gantt timelines manually, and copy-pasting tasks between boards.</p>
+          
+          <ul class="benefit-checklist">
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              Productivity increased by 40%
+            </li>
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              Automated meeting minutes & actionable notes
+            </li>
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              Instant Slack/Teams sync workflows
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefit-visual reveal">
+          <div class="benefit-card-preview">
+            <svg viewBox="0 0 400 250" width="80%" height="80%">
+              <!-- Graphic representing time saving: circular dial -->
+              <circle cx="200" cy="125" r="80" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="16"/>
+              <circle cx="200" cy="125" r="80" fill="none" stroke="url(#benefit-gradient)" stroke-width="16" stroke-dasharray="502" stroke-dashoffset="150" stroke-linecap="round"/>
+              <text x="200" y="120" text-anchor="middle" fill="#FFF" font-size="28" font-weight="800" font-family="'Plus Jakarta Sans', sans-serif">10h+</text>
+              <text x="200" y="145" text-anchor="middle" fill="#94A3B8" font-size="12" font-weight="600" font-family="'Plus Jakarta Sans', sans-serif">SAVED WEEKLY</text>
+              
+              <defs>
+                <linearGradient id="benefit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7C3AED"/>
+                  <stop offset="100%" stop-color="#22D3EE"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            
+            <div class="benefit-overlay-badge left">
+              <i data-lucide="calendar" style="color: #22D3EE;"></i>
+              <span style="font-size: 13px; font-weight:600;">Gantt Autogenerated</span>
+            </div>
+            
+            <div class="benefit-overlay-badge right">
+              <i data-lucide="check-circle" style="color: #C084FC;"></i>
+              <span style="font-size: 13px; font-weight:600;">3 Tasks completed by AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit Row 2 -->
+      <div class="benefit-row">
+        <div class="benefit-text reveal">
+          <h2 class="benefit-title">Enterprise-Grade Security by Default</h2>
+          <p class="benefit-desc">We know company knowledge databases are confidential. FlowMind AI handles training weights, credentials, and project structures with modern safety architecture, guaranteeing zero external leakage.</p>
+          
+          <ul class="benefit-checklist">
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              AES-256 Cloud Data Vault Encryption
+            </li>
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              SOC2 Type II compliant pipelines
+            </li>
+            <li class="benefit-check-item">
+              <div class="benefit-check-icon">
+                <i data-lucide="check"></i>
+              </div>
+              Fine-grained workspace role access
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefit-visual reveal">
+          <div class="benefit-card-preview">
+            <svg viewBox="0 0 400 250" width="80%" height="80%">
+              <!-- Graphic representing safety: lock + shield node grid -->
+              <rect x="150" y="70" width="100" height="110" rx="16" fill="none" stroke="url(#security-gradient)" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M200 95 L200 135 M180 120 L220 120" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="200" cy="120" r="40" fill="none" stroke="#7C3AED" stroke-width="4"/>
+              <circle cx="100" cy="70" r="16" fill="rgba(17, 24, 39, 0.8)" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+              <circle cx="300" cy="70" r="16" fill="rgba(17, 24, 39, 0.8)" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+              <circle cx="100" cy="170" r="16" fill="rgba(17, 24, 39, 0.8)" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+              <circle cx="300" cy="170" r="16" fill="rgba(17, 24, 39, 0.8)" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+              
+              <!-- Connection Lines -->
+              <line x1="116" y1="80" x2="160" y2="105" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="284" y1="80" x2="240" y2="105" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="116" y1="160" x2="160" y2="135" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <line x1="284" y1="160" x2="240" y2="135" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+              <defs>
+                <linearGradient id="security-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#22D3EE"/>
+                  <stop offset="100%" stop-color="#7C3AED"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            
+            <div class="benefit-overlay-badge left" style="bottom: auto; top: 30px;">
+              <i data-lucide="shield-alert" style="color: #EF4444;"></i>
+              <span style="font-size: 13px; font-weight:600;">Zero Data Leakage</span>
+            </div>
+            
+            <div class="benefit-overlay-badge right" style="top: auto; bottom: 30px;">
+              <i data-lucide="lock" style="color: #22D3EE;"></i>
+              <span style="font-size: 13px; font-weight:600;">100% Encrypted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Integrations Grid Section -->
+  <section class="section-padding integrations-hub">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Connective Hub
+        </div>
+        <h2 class="section-title">Integrates with All Your Favorite Software</h2>
+        <p class="section-description">Deploy FlowMind AI connectors seamlessly into Slack channels, GitHub code bases, Figma canvases, and notion boards.</p>
+      </div>
+
+      <div class="integrations-grid reveal">
+        <div class="integration-card">
+          <i data-lucide="slack" style="color: #E01E5A;"></i>
+          <span class="integration-name">Slack</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="github" style="color: #F8FAFC;"></i>
+          <span class="integration-name">GitHub</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="book-open" style="color: #000000; filter: invert(1);"></i>
+          <span class="integration-name">Notion</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="hard-drive" style="color: #34A853;"></i>
+          <span class="integration-name">Google Drive</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="figma" style="color: #F24E1E;"></i>
+          <span class="integration-name">Figma</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="zap" style="color: #FF4A00;"></i>
+          <span class="integration-name">Zapier</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="message-square" style="color: #5865F2;"></i>
+          <span class="integration-name">Discord</span>
+        </div>
+        <div class="integration-card">
+          <i data-lucide="trello" style="color: #0052CC;"></i>
+          <span class="integration-name">Jira</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Success Stories
+        </div>
+        <h2 class="section-title">What Top Teams Say About FlowMind</h2>
+        <p class="section-description">We help hundreds of product-led startups and senior creatives run cognitive automated pipelines.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">"FlowMind AI fundamentally restructured how our design studio tracks creative updates. The integrations map matches our Notion workspace instantly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <div class="user-profile-inner" style="background:#1F2937;">AM</div>
+            </div>
+            <div class="author-meta">
+              <span class="author-name">Alex Miller</span>
+              <span class="author-role">Design Partner, Cybera Studio</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal" style="transition-delay: 0.15s;">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">"Having an AI that summarizes long Slack channels and generates Gantt roadmaps automatically saved my engineering lead over 12 hours a week."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <div class="user-profile-inner" style="background:#1F2937;">SK</div>
+            </div>
+            <div class="author-meta">
+              <span class="author-name">Sarah Koenig</span>
+              <span class="author-role">CTO, Vertex Fintech</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal" style="transition-delay: 0.3s;">
+          <div class="testimonial-stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-quote">"The interface feels incredibly slick. It's rare to find an AI tool that values aesthetics and UX as much as operational capability."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <div class="user-profile-inner" style="background:#1F2937;">DW</div>
+            </div>
+            <div class="author-meta">
+              <span class="author-name">David Webb</span>
+              <span class="author-role">Operations, Orbit Space</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section-padding pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Transparent Pricing
+        </div>
+        <h2 class="section-title">Plans that scale with your team</h2>
+        <p class="section-description">Choose a package that aligns with your organization's workflow throughput.</p>
+      </div>
+
+      <!-- Toggle Monthly/Annually -->
+      <div class="pricing-toggle-wrap reveal">
+        <span class="pricing-label active" id="label-monthly">Monthly</span>
+        <div class="toggle-switch" id="pricing-toggle" role="button" aria-label="Toggle pricing term">
+          <div class="toggle-switch-handle"></div>
+        </div>
+        <span class="pricing-label" id="label-annual">Annually</span>
+        <span class="discount-badge">Save 20%</span>
+      </div>
+
+      <!-- Pricing cards -->
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price" id="price-starter">19</span>
+              <span class="plan-period">/mo</span>
+            </div>
+            <p class="plan-desc">For small startup teams and solo freelance creators.</p>
+          </div>
+          
+          <ul class="plan-features-list">
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Up to 5 team members
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Basic workflow automations
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              AI Meeting summaries (10/mo)
+            </li>
+            <li class="plan-feature-item">
+              <i data-lucide="x-circle"></i>
+              Custom API Access
+            </li>
+            <li class="plan-feature-item">
+              <i data-lucide="x-circle"></i>
+              Dedicated SSO Support
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+        </div>
+
+        <!-- Plan 2 (Highlighted Pro) -->
+        <div class="pricing-card featured reveal">
+          <div class="pricing-featured-badge">MOST POPULAR</div>
+          <div class="plan-header">
+            <div class="plan-name">Pro</div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price" id="price-pro">49</span>
+              <span class="plan-period">/mo</span>
+            </div>
+            <p class="plan-desc">For growing organizations needing deep cognitive integrations.</p>
+          </div>
+          
+          <ul class="plan-features-list">
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Unlimited team members
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Advanced AI workflows & paths
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Unlimited Meeting Minutes
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Custom API & integrations
+            </li>
+            <li class="plan-feature-item">
+              <i data-lucide="x-circle"></i>
+              Dedicated SSO Support
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-primary" style="width: 100%;">Start Pro Trial</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-name">Enterprise</div>
+            <div class="plan-price-wrap">
+              <span class="plan-currency">$</span>
+              <span class="plan-price" id="price-enterprise">149</span>
+              <span class="plan-period">/mo</span>
+            </div>
+            <p class="plan-desc">For scaling enterprises with custom security mandates.</p>
+          </div>
+          
+          <ul class="plan-features-list">
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Everything in Pro plan
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Custom vector embedding vaults
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Dedicated training weights safety
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              Single-Sign-On (SSO / SAML)
+            </li>
+            <li class="plan-feature-item checked">
+              <i data-lucide="check-circle-2"></i>
+              24/7 Priority SLA Engineer
+            </li>
+          </ul>
+
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion FAQ Section -->
+  <section class="section-padding" id="faq">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Got Questions?
+        </div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Everything you need to know about setting up FlowMind AI.</p>
+      </div>
+
+      <div class="faq-container reveal">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">How does FlowMind AI read workspace data?</span>
+            <span class="faq-icon">
+              <i data-lucide="chevron-down"></i>
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              FlowMind AI utilizes secure OAuth integrations to connect to your Slack, Notion, GitHub, and Google Drive channels. It queries metadata and documentation transcripts only when triggered by your rules or direct chats.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Are my team's document records used to train public models?</span>
+            <span class="faq-icon">
+              <i data-lucide="chevron-down"></i>
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Absolutely not. We maintain strict tenant isolation. All workspace documents and transcripts are processed inside secure private sandboxes, and your corporate records are never used for training external models.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Can I write custom API commands inside the AI chat?</span>
+            <span class="faq-icon">
+              <i data-lucide="chevron-down"></i>
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Yes, our Pro and Enterprise tiers feature custom integrations where you can configure webhook mappings. You can type commands like "/deploy-webhook" or define text rules, which FlowMind parses into automated REST requests to your server.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">What is the difference between monthly and annual plans?</span>
+            <span class="faq-icon">
+              <i data-lucide="chevron-down"></i>
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Annual terms are pre-billed annually and carry a 20% discount compared to monthly rolling subscriptions. You can upgrade, downgrade, or cancel your term at any time through the billing dashboard.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-trigger">
+            <span class="faq-question">Do you offer custom SLA support for Enterprise clients?</span>
+            <span class="faq-icon">
+              <i data-lucide="chevron-down"></i>
+            </span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Yes. Enterprise clients are assigned a dedicated Solution Engineer and gain access to custom SLA guarantees, SSO/SAML setup support, and secure on-prem training weight boundaries.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta section-padding">
+    <div class="container reveal">
+      <div class="cta-card">
+        <h2 class="cta-headline">Let AI Handle the Busy Work.</h2>
+        <p class="cta-subheadline">Connect your workspace tools, automate workflow triggers, and reclaim hours of productivity today.</p>
+        <div style="display:flex; justify-content:center; gap: 16px; flex-wrap:wrap;">
+          <a href="#" class="btn btn-primary">Start Free Today</a>
+          <a href="#" class="btn btn-secondary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-column">
+          <a href="#" class="logo footer-logo">
+            <div class="logo-icon"></div>
+            FlowMind AI
+          </a>
+          <p class="footer-desc">A premium cognitive workspace integrating AI chats, automatic meeting summaries, and multi-app integrations.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Dribbble">
+              <i data-lucide="dribbble"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#showcase" class="footer-link">Showcase</a></li>
+            <li><a href="#pricing" class="footer-link">Pricing</a></li>
+            <li><a href="#" class="footer-link">Beta Release</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Documentation</a></li>
+            <li><a href="#" class="footer-link">API Reference</a></li>
+            <li><a href="#" class="footer-link">Status Page</a></li>
+            <li><a href="#" class="footer-link">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Data Security</a></li>
+            <li><a href="#" class="footer-link">GDPR Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 FlowMind AI Inc. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Vector Icons Library via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
